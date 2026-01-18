@@ -7,7 +7,7 @@ export default function WelcomeScreen({ onStart }) {
                 Trivia<span className="text-yellow-300">Master</span>
             </h1>
             <p className="text-xl md:text-2xl font-light opacity-90 max-w-md mx-auto">
-                Test your knowledge with our AI-curated questions!
+                Test your knowledge!
             </p>
             <Button variant="start" onClick={onStart}>
                 Start Quiz

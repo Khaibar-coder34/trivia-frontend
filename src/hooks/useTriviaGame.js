@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { fetchQuestions, checkAnswers, resetGame as resetGameApi } from '@/services/api';
 
 export function useTriviaGame() {
-    const [gameState, setGameState] = useState('welcome'); // welcome, loading, playing, results
+    const [gameState, setGameState] = useState('welcome');
     const [questions, setQuestions] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [userAnswers, setUserAnswers] = useState(new Map());
@@ -52,7 +52,7 @@ export function useTriviaGame() {
 
     const resetGame = async () => {
         await resetGameApi();
-        startGame();
+        await startGame();
     };
 
     return {

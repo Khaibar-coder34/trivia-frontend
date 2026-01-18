@@ -6,7 +6,6 @@ export default function QuestionCard({ question, selectedAnswer, onSelectAnswer 
         <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-8 shadow-2xl animate-fade-in-up w-full">
             <div className="flex gap-2 mb-6">
                 <Badge text={question.category} color="purple" />
-                <Badge text="Hard" color="yellow" />
             </div>
 
             <h2
